@@ -1081,7 +1081,8 @@ body{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 3rem 30rem;
+	margin: 3rem auto;
+	width: 75%;
 }
 .us-text {
 	font-family: "Caveat";
@@ -1106,7 +1107,8 @@ body{
 	Contact
 =====================*/
 .contact {
-	margin: 5rem 30rem;
+	margin: 5rem auto;
+	width: 70%;
 	display: flex;
 }
 .contact-text span {
