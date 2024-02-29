@@ -311,6 +311,10 @@ body{
 	float: left;
 	margin-top: 18px;
 }
+.header .logo a img {
+	height: 100%;
+	max-width: 80%;
+}
 .header .navbar {
 	background: none;
 	box-shadow: none;
@@ -835,13 +839,35 @@ body{
 .programs {
 	display: flex;
 	justify-content: space-around;
+	margin: 2rem 10rem;
 }
 
 .programs .programs-text {
 	display: flex;
-	width: 25%;
+	width: 50%;
 	flex-direction: column;
 	justify-content: center;
+	margin: 2rem;
+}
+.programs .programs-text h2 {
+	background-image: url(img/title_bg_1.png);
+	background-repeat: no-repeat;
+    background-size: 100% 42px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 42px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    height: 42px;
+    overflow: hidden;
+	color: #6fc6ec !important;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem auto;
 }
 .programs .programs-text h3{
 	text-align: center;
@@ -867,8 +893,11 @@ body{
 	font-weight: normal;
 }
 .programs .programs-img {
-	width: 50%;
-
+	width: 30%;
+	margin: 2rem;
+}
+.programs .programs-img img {
+	width: 100%;
 }
 /*=============================
 	End Schedule CSS
@@ -962,6 +991,9 @@ body{
 .Feautes .single-features p {
 	margin-top: 20px;
 }
+.Feautes .section-title {
+	margin-top: 0 !important;
+}
 .button-process {
 	margin-top: 2rem;
 	color: white;
@@ -1040,8 +1072,70 @@ body{
 =====================*/
 
 /*===================
+	Us
+=====================*/
+.us {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 3rem 30rem;
+}
+.us-text {
+	font-family: "Caveat";
+	margin-top: 2rem;
+	font-size: 2rem;
+	color: #7790b8;
+}
+.us-title {
+	font-weight: bold;
+	color: #222A66;
+	margin: 2rem auto;
+	font-size: 3rem;
+}
+.us p {
+	width: 70%;
+	font-size: 1rem;
+}
+/*===================
+	End Us
+=====================*/
+/*===================
+	Contact
+=====================*/
+.contact {
+	margin: 5rem 30rem;
+	display: flex;
+}
+.contact-text span {
+	font-family: "Caveat";
+	color: #f4ad2b;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.contact-text p {
+	padding-top: 1rem;
+	font-size: 2rem;
+	font-weight: bold;
+	text-wrap: wrap;
+	width: 90%;
+	line-height: 3rem;
+}
+.contact-button {
+	display: flex;
+	align-items: end;
+}
+/*===================
+	End Contact
+=====================*/
+/*===================
 	Why choose CSS
 =====================*/
+.why-choose {
+	padding: 4rem !important;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
 .why-choose .choose-left h3{
 	font-size:24px;
 	font-weight:600;
@@ -2085,6 +2179,27 @@ body{
 .blog .blog-title{
 	text-align:center;
 }
+.blog .section-title h2 {
+	background-image: url(img/title_bg_2.png);
+	background-repeat: no-repeat;
+    background-size: 100% 42px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 42px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    height: 42px;
+	width: 10rem;
+    overflow: hidden;
+	color: #f6a3ba !important;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem auto;
+}
 .blog .single-news {
 	background: #fff;
 	position: relative;
@@ -2850,6 +2965,13 @@ body{
 	text-transform:capitalize;
 	resize:none;
 	border-radius: 4px;
+}
+.language-picker .nice-select {
+	display: flex;
+	align-items: center;
+}
+.language-picker select {
+	padding-bottom: 20rem;
 }
 .appointment .form-group .nice-select{
 	width: 100%;
@@ -3782,6 +3904,80 @@ body{
 /*=========================
 	Start About Us CSS
 ===========================*/
+
+.outstanding-services {
+	padding: 4rem;
+}
+.left-services, .right-services {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+.left-services .services-container,
+.right-services .services-container
+{
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.left-services .services-container {
+	justify-content: end;
+}
+.right-services .services-container {
+	justify-content: start;
+}
+.center-services .services-container {
+	justify-content: center;
+}
+.left-services .services-container .services-text,
+.right-services .services-container .services-text,
+.center-services .services-container .services-text
+{
+	display: flex;
+	flex-direction: column;
+}
+.left-services .services-container .services-text {
+	align-items: end;
+}
+.right-services .services-container .services-text {
+	align-items: start;
+}
+.center-services .services-container .services-text {
+	align-items: center;
+}
+.outstanding-services .icon-checkmark-circle {
+	color: #D87F93;
+	font-size: 2rem;
+}
+.left-services .icon-checkmark-circle {
+	margin-left: 1rem;
+}
+.right-services .icon-checkmark-circle {
+	margin-right: 1rem;
+}
+.center-services .icon-checkmark-circle {
+	margin: 1rem auto;
+}
+.center-services {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.center-services img {
+	border-radius: 1rem;
+}
+.services-icon {
+	display: flex;
+	margin-top: 0.5rem;
+}
+/*===============================
+	End Doctor Calendar CSS
+=================================*/
+
+/*=========================
+	Start About Us CSS
+===========================*/
 .about-area {
   position: relative;
   z-index: 1;
@@ -4088,10 +4284,13 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+.social-container {
+	width: 100%;
+}
 .footer .single-footer .social{
 	margin-left: auto;
 	margin-right: auto;
-	width: 100vw;
+	width: 100%;
 	margin-top:5rem;
 }
 .footer .single-footer .social li{
@@ -4264,3 +4463,12 @@ body{
 /*=========================
 	End Footer CSS
 ===========================*/
+
+section {
+	padding: 0 !important;
+}
+
+.section-title {
+	margin-bottom: 0rem !important;
+	margin-top: 5rem !important;
+}
