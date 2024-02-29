@@ -53,6 +53,7 @@ body{
 	font-weight: 400;
 	font-size:14px;
 	color:#888;
+	background-image: url(img/bg-style-1.png);
 }
 .pro-features {
 	position: fixed;
@@ -301,8 +302,9 @@ body{
 	z-index:999;
 	width:100%;
 }
-.get-quote{
-	margin-top:12px;
+.language-picker-container {
+	display: flex;
+	align-items: center;
 }
 .get-quote .btn{
 	color:#fff;
@@ -2173,9 +2175,6 @@ body{
 /*=======================
 	Start Blog CSS
 =========================*/
-.blog{
-	background:#fff;
-}
 .blog .blog-title{
 	text-align:center;
 }
@@ -2969,6 +2968,7 @@ body{
 .language-picker .nice-select {
 	display: flex;
 	align-items: center;
+	margin-bottom: 0;
 }
 .language-picker select {
 	padding-bottom: 20rem;
