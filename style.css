@@ -4474,3 +4474,15 @@ section {
 	margin-bottom: 0rem !important;
 	margin-top: 5rem !important;
 }
+
+/*=========================
+	Languaje selector CSS
+===========================*/
+
+.display-block {
+	display: block;
+}
+
+.display-none {
+	display: none;
+}

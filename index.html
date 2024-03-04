@@ -94,24 +94,60 @@
 							<div class="main-menu">
 								<nav class="navigation">
 									<ul class="nav menu">
-										<li class="active"><a href="index.html">Inicio</a></li>
-										<li><a href="#">Servicios <i class="icofont-rounded-down"></i></a>
+										<li class="spanish display-block"><a href="index.html">Inicio</a></li>
+										<li class="english display-none"><a href="index.html">Home</a></li>
+										<li class="french display-none"><a href="index.html">Accueil</a></li>
+										<li class="spanish display-block"><a>Servicios<i class="icofont-rounded-down"></i></a>
 											<ul class="dropdown">
-												<li><a href="index.html">Gestación subrogada</a></li>
-												<li><a href="index.html">Seguro médico</a></li>
-												<li><a href="index.html">Programas</a></li>
+												<li class="spanish display-block"><a href="gestacion-subrogada.html">Gestación subrogada</a></li>
+												<li class="spanish display-block"><a href="seguro-medico.html">Seguro médico</a></li>
+												<li class="spanish display-block"><a href="programa-de-viaje.html">Programas</a></li>
 											</ul>
 										</li>
-										<li><a href="#">Servicios destacados<i class="icofont-rounded-down"></i></a>
+										<li class="english display-none"><a>Services<i class="icofont-rounded-down"></i></a>
 											<ul class="dropdown">
-												<li><a href="index.html">Enfermera prenatal</a></li>
-												<li><a href="index.html">Reposo absoluto</a></li>
-												<li><a href="index.html">Programa de viaje</a></li>
-												<li><a href="index.html">Acompañamiento personal</a></li>
-												<li><a href="index.html">Personal multilingüe</a></li>
+												<li class="english display-block"><a href="gestacion-subrogada.html">Surrogacy</a></li>
+												<li class="english display-block"><a href="seguro-medico.html">Medical insurance</a></li>
+												<li class="english display-block"><a href="programa-de-viaje.html">Programs</a></li>
 											</ul>
 										</li>
-										<li><a href="contact.html">Contáctanos</a></li>
+										<li class="french display-none"><a>Services<i class="icofont-rounded-down"></i></a>
+											<ul class="dropdown">
+												<li class="french display-block"><a href="gestacion-subrogada.html">Mère de Substitution</a></li>
+												<li class="french display-block"><a href="seguro-medico.html">Assurance</a></li>
+												<li class="french display-block"><a href="programa-de-viaje.html">Programmes</a></li>
+											</ul>
+										</li>
+										<li class="spanish display-block"><a>Servicios destacados<i class="icofont-rounded-down"></i></a>
+											<ul class="dropdown">
+												<li class="spanish display-block"><a href="enfemeras.html">Enfermera prenatal</a></li>
+												<li class="spanish display-block"><a href="reposo.html">Reposo absoluto</a></li>
+												<li class="spanish display-block"><a href="programa-de-viaje.html">Programa de viaje</a></li>
+												<li class="spanish display-block"><a href="seguimiento.html">Acompañamiento personal</a></li>
+												<li class="spanish display-block"><a href="multilingue.html">Personal multilingüe</a></li>
+											</ul>
+										</li>
+										<li class="english display-none"><a>Flagship services<i class="icofont-rounded-down"></i></a>
+											<ul class="dropdown">
+												<li class="english display-none"><a href="enfemeras.html">Nursery</a></li>
+												<li class="english display-none"><a href="reposo.html">Absolute Rest</a></li>
+												<li class="english display-none"><a href="programa-de-viaje.html">Travel program</a></li>
+												<li class="english display-none"><a href="seguimiento.html">Personal attention</a></li>
+												<li class="english display-none"><a href="multilingue.html">Multilingual personal</a></li>
+											</ul>
+										</li>
+										<li class="french display-none"><a>Services en vedette<i class="icofont-rounded-down"></i></a>
+											<ul class="dropdown">
+												<li class="french display-none"><a href="enfemeras.html">Infirmière Prénatale</a></li>
+												<li class="french display-none"><a href="reposo.html">Repos Absolu</a></li>
+												<li class="french display-none"><a href="programa-de-viaje.html">Programme de Voyage</a></li>
+												<li class="french display-none"><a href="seguimiento.html">Accompagnement Personnel</a></li>
+												<li class="french display-none"><a href="multilingue.html">Equipe Multilingue</a></li>
+											</ul>
+										</li>
+										<li class="active spanish display-block"><a href="contact.html">Contáctanos</a></li>
+										<li class="english display-none"><a href="contact.html">Contact us</a></li>
+										<li class="french display-none"><a href="contact.html">Contactez-nous</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -122,10 +158,10 @@
 								data-trigger-class="li4-btn li4-btn--subtle js-tab-focus">
 								<form action="" class="language-picker__form">
 									<!-- <label for="language-picker-select">Select your language</label> -->
-									<select name="language-picker-select" id="language-picker-select">
-										<option lang="de" value="deutsch" selected>Español</option>
+									<select name="language-picker-select" id="language-picker-select" onchange="val()">
+										<option lang="de" value="spanish" selected>Español</option>
 										<option lang="en" value="english">English</option>
-										<option lang="fr" value="francais">Français</option>
+										<option lang="fr" value="french">Français</option>
 										<!-- <option lang="it" value="italiano">Italiano</option> -->
 									</select>
 								</form>
@@ -666,6 +702,8 @@
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+	<!-- Custom JS -->
+	<script src="js/custom.js"></script>
 </body>
 
 </html>
