@@ -41,6 +41,10 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Mozilla Foundation Icon Font -->
 	<link href="http://mozilla.github.io/foundation-icons/assets/foundation-icons.css" type="text/css" rel="stylesheet">
+	<!-- Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+		integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+		crossorigin="" />
 
 	<!-- Medipro CSS -->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -97,55 +101,86 @@
 										<li class="spanish display-block"><a href="index.html">Inicio</a></li>
 										<li class="english display-none"><a href="index.html">Home</a></li>
 										<li class="french display-none"><a href="index.html">Accueil</a></li>
-										<li class="spanish display-block"><a>Servicios<i class="icofont-rounded-down"></i></a>
+										<li class="spanish display-block"><a>Servicios<i
+													class="icofont-rounded-down"></i></a>
 											<ul class="dropdown">
-												<li class="spanish display-block"><a href="gestacion-subrogada.html">Gestación subrogada</a></li>
-												<li class="spanish display-block"><a href="seguro-medico.html">Seguro médico</a></li>
-												<li class="spanish display-block"><a href="programa-de-viaje.html">Programas</a></li>
+												<li class="spanish display-block"><a
+														href="gestacion-subrogada.html">Gestación subrogada</a></li>
+												<li class="spanish display-block"><a href="seguro-medico.html">Seguro
+														médico</a></li>
+												<li class="spanish display-block"><a
+														href="programa-de-viaje.html">Programas</a></li>
 											</ul>
 										</li>
-										<li class="english display-none"><a>Services<i class="icofont-rounded-down"></i></a>
+										<li class="english display-none"><a>Services<i
+													class="icofont-rounded-down"></i></a>
 											<ul class="dropdown">
-												<li class="english display-block"><a href="gestacion-subrogada.html">Surrogacy</a></li>
-												<li class="english display-block"><a href="seguro-medico.html">Medical insurance</a></li>
-												<li class="english display-block"><a href="programa-de-viaje.html">Programs</a></li>
+												<li class="english display-block"><a
+														href="gestacion-subrogada.html">Surrogacy</a></li>
+												<li class="english display-block"><a href="seguro-medico.html">Medical
+														insurance</a></li>
+												<li class="english display-block"><a
+														href="programa-de-viaje.html">Programs</a></li>
 											</ul>
 										</li>
-										<li class="french display-none"><a>Services<i class="icofont-rounded-down"></i></a>
+										<li class="french display-none"><a>Services<i
+													class="icofont-rounded-down"></i></a>
 											<ul class="dropdown">
-												<li class="french display-block"><a href="gestacion-subrogada.html">Mère de Substitution</a></li>
-												<li class="french display-block"><a href="seguro-medico.html">Assurance</a></li>
-												<li class="french display-block"><a href="programa-de-viaje.html">Programmes</a></li>
+												<li class="french display-block"><a href="gestacion-subrogada.html">Mère
+														de Substitution</a></li>
+												<li class="french display-block"><a
+														href="seguro-medico.html">Assurance</a></li>
+												<li class="french display-block"><a
+														href="programa-de-viaje.html">Programmes</a></li>
 											</ul>
 										</li>
-										<li class="spanish display-block"><a>Servicios destacados<i class="icofont-rounded-down"></i></a>
+										<li class="spanish display-block"><a>Servicios destacados<i
+													class="icofont-rounded-down"></i></a>
 											<ul class="dropdown">
-												<li class="spanish display-block"><a href="enfemeras.html">Enfermera prenatal</a></li>
-												<li class="spanish display-block"><a href="reposo.html">Reposo absoluto</a></li>
-												<li class="spanish display-block"><a href="programa-de-viaje.html">Programa de viaje</a></li>
-												<li class="spanish display-block"><a href="seguimiento.html">Acompañamiento personal</a></li>
-												<li class="spanish display-block"><a href="multilingue.html">Personal multilingüe</a></li>
+												<li class="spanish display-block"><a href="enfemeras.html">Enfermera
+														prenatal</a></li>
+												<li class="spanish display-block"><a href="reposo.html">Reposo
+														absoluto</a></li>
+												<li class="spanish display-block"><a
+														href="programa-de-viaje.html">Programa de viaje</a></li>
+												<li class="spanish display-block"><a
+														href="seguimiento.html">Acompañamiento personal</a></li>
+												<li class="spanish display-block"><a href="multilingue.html">Personal
+														multilingüe</a></li>
 											</ul>
 										</li>
-										<li class="english display-none"><a>Flagship services<i class="icofont-rounded-down"></i></a>
+										<li class="english display-none"><a>Flagship services<i
+													class="icofont-rounded-down"></i></a>
 											<ul class="dropdown">
-												<li class="english display-none"><a href="enfemeras.html">Nursery</a></li>
-												<li class="english display-none"><a href="reposo.html">Absolute Rest</a></li>
-												<li class="english display-none"><a href="programa-de-viaje.html">Travel program</a></li>
-												<li class="english display-none"><a href="seguimiento.html">Personal attention</a></li>
-												<li class="english display-none"><a href="multilingue.html">Multilingual personal</a></li>
+												<li class="english display-none"><a href="enfemeras.html">Nursery</a>
+												</li>
+												<li class="english display-none"><a href="reposo.html">Absolute Rest</a>
+												</li>
+												<li class="english display-none"><a href="programa-de-viaje.html">Travel
+														program</a></li>
+												<li class="english display-none"><a href="seguimiento.html">Personal
+														attention</a></li>
+												<li class="english display-none"><a href="multilingue.html">Multilingual
+														personal</a></li>
 											</ul>
 										</li>
-										<li class="french display-none"><a>Services en vedette<i class="icofont-rounded-down"></i></a>
+										<li class="french display-none"><a>Services en vedette<i
+													class="icofont-rounded-down"></i></a>
 											<ul class="dropdown">
-												<li class="french display-none"><a href="enfemeras.html">Infirmière Prénatale</a></li>
-												<li class="french display-none"><a href="reposo.html">Repos Absolu</a></li>
-												<li class="french display-none"><a href="programa-de-viaje.html">Programme de Voyage</a></li>
-												<li class="french display-none"><a href="seguimiento.html">Accompagnement Personnel</a></li>
-												<li class="french display-none"><a href="multilingue.html">Equipe Multilingue</a></li>
+												<li class="french display-none"><a href="enfemeras.html">Infirmière
+														Prénatale</a></li>
+												<li class="french display-none"><a href="reposo.html">Repos Absolu</a>
+												</li>
+												<li class="french display-none"><a
+														href="programa-de-viaje.html">Programme de Voyage</a></li>
+												<li class="french display-none"><a
+														href="seguimiento.html">Accompagnement Personnel</a></li>
+												<li class="french display-none"><a href="multilingue.html">Equipe
+														Multilingue</a></li>
 											</ul>
 										</li>
-										<li class="active spanish display-block"><a href="contact.html">Contáctanos</a></li>
+										<li class="active spanish display-block"><a href="contact.html">Contáctanos</a>
+										</li>
 										<li class="english display-none"><a href="contact.html">Contact us</a></li>
 										<li class="french display-none"><a href="contact.html">Contactez-nous</a></li>
 									</ul>
@@ -174,86 +209,88 @@
 		<!--/ End Header Inner -->
 	</header>
 	<!-- End Header Area -->
-	
-		<!-- Breadcrumbs -->
-		<div class="breadcrumbs overlay">
-			<div class="container">
-				<div class="bread-inner">
-					<div class="row">
-						<div class="col-12">
+
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs overlay">
+		<div class="container">
+			<div class="bread-inner">
+				<div class="row">
+					<div class="col-12">
+						<h2>Contáctanos</h2>
+						<ul class="bread-list">
+							<li><a href="index.html">Inicio</a></li>
+							<li><i class="icofont-simple-right"></i></li>
+							<li class="active">Contáctanos</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Breadcrumbs -->
+
+	<!-- Start Contact Us -->
+	<section class="contact-us section">
+		<div class="container">
+			<div class="inner">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="contact-us-left">
+							<!--Start Google-map-->
+							<div class="location">
+								<div class="map" id="map"></div>
+							</div>
+							<!--End Google-map-->
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="contact-us-form">
 							<h2>Contáctanos</h2>
-							<ul class="bread-list">
-								<li><a href="index.html">Inicio</a></li>
-								<li><i class="icofont-simple-right"></i></li>
-								<li class="active">Contáctanos</li>
-							</ul>
+							<p>Si tienes alguna duda, por favor, comunícate con nosotros.</p>
+							<!-- Form -->
+							<form class="form" method="post" action="mail/mail.php">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input type="text" name="name" placeholder="Nombre" required="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input type="email" name="email" placeholder="Correo" required="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input type="text" name="phone" placeholder="Teléfono" required="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input type="text" name="subject" placeholder="Asunto" required="">
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="form-group">
+											<textarea name="message" placeholder="Mensaje" required=""></textarea>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group login-btn">
+											<button class="btn" type="submit">Enviar</button>
+										</div>
+									</div>
+								</div>
+							</form>
+							<!--/ End Form -->
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- End Breadcrumbs -->
-				
-		<!-- Start Contact Us -->
-		<section class="contact-us section">
-			<div class="container">
-				<div class="inner">
-					<div class="row"> 
-						<div class="col-lg-6">
-							<div class="contact-us-left">
-								<!--Start Google-map -->
-								<div id="myMap"></div>
-								<!--/End Google-map -->
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="contact-us-form">
-								<h2>Contáctanos</h2>
-								<p>Si tienes alguna duda, por favor, comunícate con nosotros.</p>
-								<!-- Form -->
-								<form class="form" method="post" action="mail/mail.php">
-									<div class="row">
-										<div class="col-lg-6">
-											<div class="form-group">
-												<input type="text" name="name" placeholder="Nombre" required="">
-											</div>
-										</div>
-										<div class="col-lg-6">
-											<div class="form-group">
-												<input type="email" name="email" placeholder="Correo" required="">
-											</div>
-										</div>
-										<div class="col-lg-6">
-											<div class="form-group">
-												<input type="text" name="phone" placeholder="Teléfono" required="">
-											</div>
-										</div>
-										<div class="col-lg-6">
-											<div class="form-group">
-												<input type="text" name="subject" placeholder="Asunto" required="">
-											</div>
-										</div>
-										<div class="col-lg-12">
-											<div class="form-group">
-												<textarea name="message" placeholder="Mensaje" required=""></textarea>
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="form-group login-btn">
-												<button class="btn" type="submit">Enviar</button>
-											</div>
-										</div>
-									</div>
-								</form>
-								<!--/ End Form -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--/ End Contact Us -->
-		
+	</section>
+	<!--/ End Contact Us -->
+
 	<!-- Footer Area -->
 	<footer id="footer" class="footer ">
 		<!-- Top SVG -->
@@ -334,54 +371,60 @@
 		<!--/ End Copyright -->
 	</footer>
 	<!--/ End Footer Area -->
-		
-		<!-- jquery Min JS -->
-        <script src="js/jquery.min.js"></script>
-		<!-- jquery Migrate JS -->
-		<script src="js/jquery-migrate-3.0.0.js"></script>
-		<!-- jquery Ui JS -->
-		<script src="js/jquery-ui.min.js"></script>
-		<!-- Easing JS -->
-        <script src="js/easing.js"></script>
-		<!-- Color JS -->
-		<script src="js/colors.js"></script>
-		<!-- Popper JS -->
-		<script src="js/popper.min.js"></script>
-		<!-- Bootstrap Datepicker JS -->
-		<script src="js/bootstrap-datepicker.js"></script>
-		<!-- Jquery Nav JS -->
-        <script src="js/jquery.nav.js"></script>
-		<!-- Slicknav JS -->
-		<script src="js/slicknav.min.js"></script>
-		<!-- ScrollUp JS -->
-        <script src="js/jquery.scrollUp.min.js"></script>
-		<!-- Niceselect JS -->
-		<script src="js/niceselect.js"></script>
-		<!-- Tilt Jquery JS -->
-		<script src="js/tilt.jquery.min.js"></script>
-		<!-- Owl Carousel JS -->
-        <script src="js/owl-carousel.js"></script>
-		<!-- counterup JS -->
-		<script src="js/jquery.counterup.min.js"></script>
-		<!-- Steller JS -->
-		<script src="js/steller.js"></script>
-		<!-- Wow JS -->
-		<script src="js/wow.min.js"></script>
-		<!-- Magnific Popup JS -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<!-- Counter Up CDN JS -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-		<!-- Google Map API Key JS -->
-		<script src="https://maps.google.com/maps/api/js?key=AIzaSyDGqTyqoPIvYxhn_Sa7ZrK5bENUWhpCo0w"></script>
-		<!-- Gmaps JS -->
-		<script src="js/gmaps.min.js"></script>
-		<!-- Map Active JS -->
-		<script src="js/map-active.js"></script>
-		<!-- Bootstrap JS -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Main JS -->
-		<script src="js/main.js"></script>
-		<!-- Custom JS -->
-		<script src="js/custom.js"></script>
-    </body>
+
+	<!-- jquery Min JS -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jquery Migrate JS -->
+	<script src="js/jquery-migrate-3.0.0.js"></script>
+	<!-- jquery Ui JS -->
+	<script src="js/jquery-ui.min.js"></script>
+	<!-- Easing JS -->
+	<script src="js/easing.js"></script>
+	<!-- Color JS -->
+	<script src="js/colors.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Bootstrap Datepicker JS -->
+	<script src="js/bootstrap-datepicker.js"></script>
+	<!-- Jquery Nav JS -->
+	<script src="js/jquery.nav.js"></script>
+	<!-- Slicknav JS -->
+	<script src="js/slicknav.min.js"></script>
+	<!-- ScrollUp JS -->
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<!-- Niceselect JS -->
+	<script src="js/niceselect.js"></script>
+	<!-- Tilt Jquery JS -->
+	<script src="js/tilt.jquery.min.js"></script>
+	<!-- Owl Carousel JS -->
+	<script src="js/owl-carousel.js"></script>
+	<!-- counterup JS -->
+	<script src="js/jquery.counterup.min.js"></script>
+	<!-- Steller JS -->
+	<script src="js/steller.js"></script>
+	<!-- Wow JS -->
+	<script src="js/wow.min.js"></script>
+	<!-- Magnific Popup JS -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Counter Up CDN JS -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<!-- Google Map API Key JS -->
+	<!-- <script src="https://maps.google.com/maps/api/js?key=AIzaSyDGqTyqoPIvYxhn_Sa7ZrK5bENUWhpCo0w"></script> -->
+	<!-- Gmaps JS -->
+	<!-- <script src="js/gmaps.min.js"></script> -->
+	<!-- Map Active JS -->
+	<!-- <script src="js/map-active.js"></script> -->
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+	<!-- Custom JS -->
+	<script src="js/custom.js"></script>
+	<!-- Leaflet's JS -->
+	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+		integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+		crossorigin="">
+		</script>
+</body>
+
 </html>

@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+    displayMap();
     language = sessionStorage.getItem("language");
     var english = document.querySelectorAll(".english");
     var spanish = document.querySelectorAll(".spanish");
     var french = document.querySelectorAll(".french");
     console.log(language);
+    var languageSelect = document.getElementById("language-picker-select");
     if (sessionStorage.getItem("language") !== null) {
         if (language === "spanish") {
             spanish.forEach(function (spanishElement) {
@@ -18,6 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 frenchElement.classList.remove("display-block");
                 frenchElement.classList.add("display-none");
             });
+            languageSelect.options[0].selected = true;
+            languageSelect.options[1].selected = false;
+            languageSelect.options[2].selected = false;
         }
         if (language === "english") {
             english.forEach(function (englishElement) {
@@ -32,6 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 frenchElement.classList.remove("display-block");
                 frenchElement.classList.add("display-none");
             });
+            languageSelect.options[0].selected = false;
+            languageSelect.options[1].selected = true;
+            languageSelect.options[2].selected = false;
         }
         if (language === "french") {
             french.forEach(function (frenchElement) {
@@ -46,6 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 englishElement.classList.remove("display-block");
                 englishElement.classList.add("display-none");
             });
+            languageSelect.options[0].selected = false;
+            languageSelect.options[1].selected = false;
+            languageSelect.options[2].selected = true;
         }
     }
 });
@@ -100,4 +111,16 @@ function val() {
             englishElement.classList.add("display-none");
         });
     }
+}
+
+function displayMap() {
+    var map = L.map("map").setView([19.447683, -99.063565], 14);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        detectRetina: true,
+    }).addTo(map);
+
+    L.marker([19.447683, -99.063565]).addTo(map);
 }
