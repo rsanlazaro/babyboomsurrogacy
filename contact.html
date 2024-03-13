@@ -77,137 +77,110 @@
 	<!-- End Preloader -->
 
 	<!-- Header Area -->
-	<header class="header">
-		<!-- Header Inner -->
-		<div class="header-inner">
-			<div class="container">
-				<div class="inner">
-					<div class="row">
-						<div class="col-lg-3 col-md-3 col-12">
-							<!-- Start Logo -->
-							<div class="logo">
-								<a href="index.html"><img src="img/logo.png" alt="#"></a>
-							</div>
-							<!-- End Logo -->
-							<!-- Mobile Nav -->
-							<div class="mobile-nav"></div>
-							<!-- End Mobile Nav -->
-						</div>
-						<div class="col-lg-7 col-md-9 col-12">
-							<!-- Main Menu -->
-							<div class="main-menu">
-								<nav class="navigation">
-									<ul class="nav menu">
-										<li class="spanish display-block"><a href="index.html">Inicio</a></li>
-										<li class="english display-none"><a href="index.html">Home</a></li>
-										<li class="french display-none"><a href="index.html">Accueil</a></li>
-										<li class="spanish display-block"><a>Servicios<i
-													class="icofont-rounded-down"></i></a>
-											<ul class="dropdown">
-												<li class="spanish display-block"><a
-														href="gestacion-subrogada.html">Gestación subrogada</a></li>
-												<li class="spanish display-block"><a href="seguro-medico.html">Seguro
-														médico</a></li>
-												<li class="spanish display-block"><a
-														href="programa-de-viaje.html">Programas</a></li>
-											</ul>
-										</li>
-										<li class="english display-none"><a>Services<i
-													class="icofont-rounded-down"></i></a>
-											<ul class="dropdown">
-												<li class="english display-block"><a
-														href="gestacion-subrogada.html">Surrogacy</a></li>
-												<li class="english display-block"><a href="seguro-medico.html">Medical
-														insurance</a></li>
-												<li class="english display-block"><a
-														href="programa-de-viaje.html">Programs</a></li>
-											</ul>
-										</li>
-										<li class="french display-none"><a>Services<i
-													class="icofont-rounded-down"></i></a>
-											<ul class="dropdown">
-												<li class="french display-block"><a href="gestacion-subrogada.html">Mère
-														de Substitution</a></li>
-												<li class="french display-block"><a
-														href="seguro-medico.html">Assurance</a></li>
-												<li class="french display-block"><a
-														href="programa-de-viaje.html">Programmes</a></li>
-											</ul>
-										</li>
-										<li class="spanish display-block"><a>Servicios destacados<i
-													class="icofont-rounded-down"></i></a>
-											<ul class="dropdown">
-												<li class="spanish display-block"><a href="enfemeras.html">Enfermera
-														prenatal</a></li>
-												<li class="spanish display-block"><a href="reposo.html">Reposo
-														absoluto</a></li>
-												<li class="spanish display-block"><a
-														href="programa-de-viaje.html">Programa de viaje</a></li>
-												<li class="spanish display-block"><a
-														href="seguimiento.html">Acompañamiento personal</a></li>
-												<li class="spanish display-block"><a href="multilingue.html">Personal
-														multilingüe</a></li>
-											</ul>
-										</li>
-										<li class="english display-none"><a>Flagship services<i
-													class="icofont-rounded-down"></i></a>
-											<ul class="dropdown">
-												<li class="english display-none"><a href="enfemeras.html">Nursery</a>
-												</li>
-												<li class="english display-none"><a href="reposo.html">Absolute Rest</a>
-												</li>
-												<li class="english display-none"><a href="programa-de-viaje.html">Travel
-														program</a></li>
-												<li class="english display-none"><a href="seguimiento.html">Personal
-														attention</a></li>
-												<li class="english display-none"><a href="multilingue.html">Multilingual
-														personal</a></li>
-											</ul>
-										</li>
-										<li class="french display-none"><a>Services en vedette<i
-													class="icofont-rounded-down"></i></a>
-											<ul class="dropdown">
-												<li class="french display-none"><a href="enfemeras.html">Infirmière
-														Prénatale</a></li>
-												<li class="french display-none"><a href="reposo.html">Repos Absolu</a>
-												</li>
-												<li class="french display-none"><a
-														href="programa-de-viaje.html">Programme de Voyage</a></li>
-												<li class="french display-none"><a
-														href="seguimiento.html">Accompagnement Personnel</a></li>
-												<li class="french display-none"><a href="multilingue.html">Equipe
-														Multilingue</a></li>
-											</ul>
-										</li>
-										<li class="active spanish display-block"><a href="contact.html">Contáctanos</a>
-										</li>
-										<li class="english display-none"><a href="contact.html">Contact us</a></li>
-										<li class="french display-none"><a href="contact.html">Contactez-nous</a></li>
-									</ul>
-								</nav>
-							</div>
-							<!--/ End Main Menu -->
-						</div>
-						<div class="col-lg-2 col-12 language-picker-container">
-							<div class="language-picker js-language-picker get-quote"
-								data-trigger-class="li4-btn li4-btn--subtle js-tab-focus">
-								<form action="" class="language-picker__form">
-									<!-- <label for="language-picker-select">Select your language</label> -->
-									<select name="language-picker-select" id="language-picker-select" onchange="val()">
-										<option lang="de" value="spanish" selected>Español</option>
-										<option lang="en" value="english">English</option>
-										<option lang="fr" value="french">Français</option>
-										<!-- <option lang="it" value="italiano">Italiano</option> -->
-									</select>
-								</form>
-							</div>
-						</div>
+	<nav class="navbar navbar-expand-md navbar-light">
+		<a class="navbar-brand" href="#">
+			<img src="img/logo.png" alt="BabyBoom">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item spanish display-block"><a class="nav-link" href="index.html">Inicio</a></li>
+				<li class="nav-item english display-none"><a class="nav-link" href="index.html">Home</a></li>
+				<li class="nav-item french display-none"><a class="nav-link" href="index.html">Accueil</a></li>
+				<li class="nav-item dropdown spanish display-block">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Servicios
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="gestacion-subrogada.html">Gestación subrogada</a>
+						<a class="dropdown-item" href="seguro-medico.html">Seguro médico</a>
+						<a class="dropdown-item" href="programas.html">Programas</a>
 					</div>
+				</li>
+				<li class="nav-item dropdown english display-none">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Services
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="gestacion-subrogada.html">Surrogacy</a>
+						<a class="dropdown-item" href="seguro-medico.html">Medical insurance</a>
+						<a class="dropdown-item" href="programas.html">Programs</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown french display-none">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Services
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="gestacion-subrogada.html">Surrogacy F</a>
+						<a class="dropdown-item" href="seguro-medico.html">Medical insurance F</a>
+						<a class="dropdown-item" href="programas.html">Programs F</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown spanish display-block">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Servicios destacados
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="enfemeras.html">Enfermera prenatal</a>
+						<a class="dropdown-item" href="reposo.html">Reposo absoluto</a>
+						<a class="dropdown-item" href="programa-de-viaje.html">Programa de viaje</a>
+						<a class="dropdown-item" href="seguimiento.html">Acompañamiento personal</a>
+						<a class="dropdown-item" href="multilingue.html">Personal multilingüe</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown english display-none">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Flagship services
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="enfemeras.html">Nursery</a>
+						<a class="dropdown-item" href="reposo.html">Absolute rest</a>
+						<a class="dropdown-item" href="programa-de-viaje.html">Travel program</a>
+						<a class="dropdown-item" href="seguimiento.html">Personal attention</a>
+						<a class="dropdown-item" href="multilingue.html">Mutlilingual personal</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown french display-none">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Services en vedette
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="enfemeras.html">Infirmière prénatale</a>
+						<a class="dropdown-item" href="reposo.html">Repos Absolut</a>
+						<a class="dropdown-item" href="programa-de-viaje.html">Programme de Voyage</a>
+						<a class="dropdown-item" href="seguimiento.html">Accompagnement Personnel</a>
+						<a class="dropdown-item" href="multilingue.html">Equipe Multilingue</a>
+					</div>
+				</li>
+				<li class="nav-item active spanish display-block"><a class="nav-link" href="contact.html">Contáctanos</a></li>
+				<li class="nav-item english display-none"><a class="nav-link" href="contact.html">Contact us</a></li>
+				<li class="nav-item french display-none"><a class="nav-link" href="contact.html">Contactez-nous</a></li>
+			</ul>
+			<div class="col-md-2 col-12 language-picker-container">
+				<div class="language-picker js-language-picker get-quote"
+					data-trigger-class="li4-btn li4-btn--subtle js-tab-focus">
+					<form action="" class="language-picker__form">
+						<select name="language-picker-select" id="language-picker-select" onchange="val()">
+							<option lang="de" value="spanish" selected>Español</option>
+							<option lang="en" value="english">English</option>
+							<option lang="fr" value="french">Français</option>
+						</select>
+					</form>
 				</div>
 			</div>
 		</div>
-		<!--/ End Header Inner -->
-	</header>
+	</nav>
 	<!-- End Header Area -->
 
 	<!-- Breadcrumbs -->

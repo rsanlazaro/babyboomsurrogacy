@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    displayMap();
     language = sessionStorage.getItem("language");
     var english = document.querySelectorAll(".english");
     var spanish = document.querySelectorAll(".spanish");
     var french = document.querySelectorAll(".french");
-    console.log(language);
     var languageSelect = document.getElementById("language-picker-select");
     if (sessionStorage.getItem("language") !== null) {
         if (language === "spanish") {
@@ -59,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
             languageSelect.options[2].selected = true;
         }
     }
+    displayMap();
 });
 
 

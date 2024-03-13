@@ -350,6 +350,8 @@ body {
 .language-picker-container {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	padding: 0;
 }
 
 .get-quote .btn {
@@ -3472,10 +3474,10 @@ body {
 	font-weight: 400;
 }
 
-.appointment .form-group .nice-select::after {
+/* .appointment .form-group .nice-select::after {
 	right: 20px;
 	color: #757575;
-}
+} */
 
 .appointment .form-group .list {
 	border-radius: 4px;
@@ -5238,4 +5240,25 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+/*=========================
+	Navbar modifications
+===========================*/
+
+.navbar-nav {
+	align-items: center;
+}
+
+.navbar-brand img {
+	height: 2rem;
+	padding-left: 1rem;
+}
+
+.navbar-nav {
+	margin-left: auto;
+}
+
+.navbar-nav li {
+	margin: auto 1rem;
 }

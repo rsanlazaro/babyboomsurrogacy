@@ -32,6 +32,68 @@ Version:	1.1
 =========================================
 [End Activation Code]
 =========================================*/
+
+document.addEventListener("DOMContentLoaded", function () {
+	language = sessionStorage.getItem("language");
+	var english = document.querySelectorAll(".english");
+	var spanish = document.querySelectorAll(".spanish");
+	var french = document.querySelectorAll(".french");
+	var languageSelect = document.getElementById("language-picker-select");
+	if (sessionStorage.getItem("language") !== null) {
+		if (language === "spanish") {
+			spanish.forEach(function (spanishElement) {
+				spanishElement.classList.add("display-block");
+				spanishElement.classList.remove("display-none");
+			});
+			english.forEach(function (englishElement) {
+				englishElement.classList.remove("display-block");
+				englishElement.classList.add("display-none");
+			});
+			french.forEach(function (frenchElement) {
+				frenchElement.classList.remove("display-block");
+				frenchElement.classList.add("display-none");
+			});
+			languageSelect.options[0].selected = true;
+			languageSelect.options[1].selected = false;
+			languageSelect.options[2].selected = false;
+		}
+		if (language === "english") {
+			english.forEach(function (englishElement) {
+				englishElement.classList.add("display-block");
+				englishElement.classList.remove("display-none");
+			});
+			spanish.forEach(function (spanishElement) {
+				spanishElement.classList.remove("display-block");
+				spanishElement.classList.add("display-none");
+			});
+			french.forEach(function (frenchElement) {
+				frenchElement.classList.remove("display-block");
+				frenchElement.classList.add("display-none");
+			});
+			languageSelect.options[0].selected = false;
+			languageSelect.options[1].selected = true;
+			languageSelect.options[2].selected = false;
+		}
+		if (language === "french") {
+			french.forEach(function (frenchElement) {
+				frenchElement.classList.add("display-block");
+				frenchElement.classList.remove("display-none");
+			});
+			spanish.forEach(function (spanishElement) {
+				spanishElement.classList.remove("display-block");
+				spanishElement.classList.add("display-none");
+			});
+			english.forEach(function (englishElement) {
+				englishElement.classList.remove("display-block");
+				englishElement.classList.add("display-none");
+			});
+			languageSelect.options[0].selected = false;
+			languageSelect.options[1].selected = false;
+			languageSelect.options[2].selected = true;
+		}
+	}
+});
+
 (function ($) {
 	"use strict";
 	$(document).on('ready', function () {
@@ -64,15 +126,6 @@ Version:	1.1
 		======================================*/
 		$('.search a').on("click", function () {
 			$('.search-top').toggleClass('active');
-		});
-
-		/*====================================
-			Mobile Menu
-		======================================*/
-		$('.menu').slicknav({
-			prependTo: ".mobile-nav",
-			duration: 300,
-			closeOnClick: true,
 		});
 
 		/*===============================
@@ -301,21 +354,21 @@ Version:	1.1
 		/*====================
 			Google Maps JS
 		======================*/
-		var map = new GMaps({
-			el: '#map',
-			lat: 23.011245,
-			lng: 90.884780,
-			scrollwheel: false,
-		});
-		map.addMarker({
-			lat: 23.011245,
-			lng: 90.884780,
-			title: 'Marker with InfoWindow',
-			infoWindow: {
-				content: '<p>welcome to Medipro</p>'
-			}
+		// var map = new GMaps({
+		// 	el: '#map',
+		// 	lat: 23.011245,
+		// 	lng: 90.884780,
+		// 	scrollwheel: false,
+		// });
+		// map.addMarker({
+		// 	lat: 23.011245,
+		// 	lng: 90.884780,
+		// 	title: 'Marker with InfoWindow',
+		// 	infoWindow: {
+		// 		content: '<p>welcome to Medipro</p>'
+		// 	}
 
-		});
+		// });
 	});
 
 	/*====================
