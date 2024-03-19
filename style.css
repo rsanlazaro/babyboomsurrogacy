@@ -1,50 +1,3 @@
-/* =====================================
-Template Name: 	Mediplus.
-Author Name: Naimur Rahman
-Website: http://wpthemesgrid.com/
-Description: Mediplus - Doctor HTML Template.
-Version:	1.1
-========================================*/
-/*======================================
-[ CSS Table of contents ]
-* Global CSS
-* Header CSS
-	+ Topbar
-	+ Logo
-	+ Widget
-	+ Main Menu
-	+ Search
-* Hero Slider CSS
-* Schedule CSS
-* Feautes CSS
-* Fun Facts CSS
-* Why Choose CSS
-* Call to Action CSS
-* Portfolio CSS
-	+ Portfolio Single CSS
-* Services CSS
-* Testimonials CSS
-* Departments CSS
-* Pricing Table CSS
-* Clients CSS
-* Team CSS
-	+ Single Team
-* Blog CSS
-	+ Latest Blog CSS
-	+ Blog Single CSS
-	+ Blog Sidebar CSS
-* Appointment CSS
-* Login CSS
-* Register CSS
-* Faq CSS
-* Contact Us CSS
-* Error 404 CSS
-* Mail Success CSS
-* Newsletter CSS
-* Doctor Calendar CSS
-* About Us CSS
-* Footer CSS
-========================================*/
 /*=============================
 	Global CSS 
 ===============================*/
@@ -54,6 +7,31 @@ body {
 	font-size: 14px;
 	color: #888;
 	background-image: url(img/bg-style-1.png);
+}
+p, span, a, option, li {
+	color: #757575;
+	font-size: 0.75rem;
+}
+h2 {
+	font-size: 1rem;
+}
+h3 {
+	font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+	p, span, option, li {
+		font-size: 0.8rem;
+	}
+	.navbar-nav a, .navbar-nav li {
+		font-size: 0.85rem;
+	}
+	h2 {
+		font-size: 1.1rem;
+	}
+	h3 {
+		font-size: 1rem;
+	}
 }
 
 .pro-features {
@@ -95,7 +73,7 @@ body {
 
 .pro-features .button {}
 
-.pro-features .button .btn {
+/* .pro-features .button .btn {
 	width: 100%;
 	text-align: center;
 	margin-top: 8px;
@@ -104,7 +82,7 @@ body {
 	font-size: 13px;
 	width: 100%;
 	text-transform: capitalize;
-}
+} */
 
 .pro-features li {
 	color: #333;
@@ -354,9 +332,15 @@ body {
 	padding: 0;
 }
 
-.get-quote .btn {
-	color: #fff;
+@media (max-width: 768px) {
+	.language-picker-container {
+		padding-bottom: 0;
+	}
 }
+
+/* .get-quote .btn {
+	color: #fff;
+} */
 
 .header .logo {
 	float: left;
@@ -398,7 +382,7 @@ body {
 	position: relative;
 }
 
-.header .nav li a::before {
+.navbar-nav li a::before {
 	position: absolute;
 	content: "";
 	left: 0;
@@ -420,8 +404,9 @@ body {
 	width: 100%;
 }
 
-.header .nav li.active a {
-	color: #D87F93;
+.active a, .active {
+	color: #D87F93 !important;
+	font-weight: 500;
 }
 
 .header .nav li:hover a:before {
@@ -503,9 +488,9 @@ body {
 	text-transform: capitalize;
 }
 
-.header .single-widget.btn {
+/* .header .single-widget.btn {
 	margin-left: 0;
-}
+} */
 
 /* Dropdown Menu */
 .header .nav li .dropdown {
@@ -690,6 +675,12 @@ body {
 /*===========================
 	Start Hero Area CSS
 =============================*/
+@media (max-width: 768px) {
+	.slider {
+		display: none;
+	}
+}
+
 .slider .single-slider {
 	height: 600px;
 	background-size: cover;
@@ -728,27 +719,27 @@ body {
 	margin-top: 30px;
 }
 
-.slider .single-slider .btn {
+/* .slider .single-slider .btn {
 	color: #fff;
 	background: #D87F93;
 	font-weight: 500;
 	display: inline-block;
 	margin: 0;
 	margin-right: 10px;
-}
+} */
 
-.slider .single-slider .btn:last-child {
+/* .slider .single-slider .btn:last-child {
 	margin: 0;
-}
+} */
 
-.slider .single-slider .btn.primary {
+/* .slider .single-slider .btn.primary {
 	background: #2C2D3F;
 	color: #fff;
-}
+} */
 
-.slider .single-slider .btn.primary:before {
+/* .slider .single-slider .btn.primary:before {
 	background: #D87F93;
-}
+} */
 
 .slider .owl-carousel .owl-nav {
 	margin: 0;
@@ -973,15 +964,27 @@ body {
 .programs {
 	display: flex;
 	justify-content: space-around;
-	margin: 2rem 10rem;
+	margin: 2rem 5%;
+}
+
+@media (min-width: 992px) {
+	.programs {
+		margin: 2rem 10%;
+	}
 }
 
 .programs .programs-text {
 	display: flex;
-	width: 50%;
+	width: 75%;
 	flex-direction: column;
 	justify-content: center;
 	margin: 2rem;
+}
+
+@media (max-width: 768px) {
+	.programs .programs-text {
+		width: 100%;
+	}
 }
 
 .programs .programs-text h2 {
@@ -1005,6 +1008,19 @@ body {
 	margin: 2rem auto;
 }
 
+@media (max-width: 576px) {
+	.programs-text h2{
+		display: none !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.programs-text h2{
+		position: relative;
+		top: -1.5rem;
+	}
+}
+
 .programs .programs-text h3 {
 	text-align: center;
 	color: #222A66;
@@ -1015,6 +1031,45 @@ body {
 	font-size: 0.75rem;
 	margin-top: 1rem;
 }
+
+@media (max-width: 576px) {
+	.programs-text {
+		margin: 2rem 3rem !important;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	.programs-text, .blog, .Feautes, .us, .contact {
+		margin: 2rem 4.5rem !important;
+	}
+	.why-choose {
+		padding: 2rem 4.5rem !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.blog {
+		margin: 2rem 5% !important;
+	}
+	.blog .container {
+		max-width: unset;
+	}
+}
+
+@media (max-width: 992px) {
+	.programs {
+		margin: 0rem 0rem;
+		width: 100%;
+		text-align: center;
+	}
+	.programs-text {
+		width: 100%;
+	}
+	.programs-img {
+		display: none;
+	}
+}
+
 
 .programs .programs-text p {
 	margin-top: 1rem;
@@ -1028,8 +1083,13 @@ body {
 	font-weight: bold;
 }
 
+@media (max-width: 992px) {
+	.programs .programs-text ul li {
+		list-style-type: none;
+	}
+}
+
 .programs .programs-text ul li span {
-	color: black;
 	font-weight: normal;
 }
 
@@ -1091,7 +1151,6 @@ body {
 }
 
 .Feautes .single-features .number-features {
-	margin-top: 100%;
 	margin-bottom: 0;
 	background-color: #ffd786;
 	color: white;
@@ -1105,6 +1164,13 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+@media (min-width: 992px) {
+	.Feautes .single-features .number-features {
+		margin-top: 100%;
+	}
+}
+
+
 
 .Feautes .single-features .signle-icon i {
 	background-color: white;
@@ -1141,7 +1207,6 @@ body {
 	padding-top: 1.5rem;
 	color: #2C2D3F;
 	font-weight: 600;
-	font-size: 21px;
 }
 
 .Feautes .single-features p {
@@ -1181,8 +1246,6 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
-.fun-facts .single-fun {}
 
 .fun-facts .single-fun i {
 	position: absolute;
@@ -1470,26 +1533,26 @@ body {
 	font-size: 15px;
 }
 
-.call-action .content .btn {
+/* .call-action .content .btn {
 	background: #fff;
 	margin-right: 20px;
 	font-weight: 500;
 	border: 1px solid #fff;
 	color: #D87F93;
-}
+} */
 
-.call-action .content .btn:before {
+/* .call-action .content .btn:before {
 	background: #D87F93;
-}
+} */
 
-.call-action .content .btn:hover {
+/* .call-action .content .btn:hover {
 	background: #D87F93;
 	color: #fff;
-}
+} */
 
-.call-action .content .btn:last-child {
+/* .call-action .content .btn:last-child {
 	margin-right: 0px;
-}
+} */
 
 .call-action .content .second {
 	border: 1px solid #fff;
@@ -1553,7 +1616,7 @@ body {
 	visibility: visible;
 }
 
-.portfolio .single-pf .btn {
+/* .portfolio .single-pf .btn {
 	color: #D87F93;
 	z-index: 3;
 	background: #fff;
@@ -1576,16 +1639,16 @@ body {
 	margin-left: -75px;
 	margin-top: -24px;
 	border-radius: 4px;
-}
+} */
 
-.portfolio .single-pf:hover .btn {
+/* .portfolio .single-pf:hover .btn {
 	opacity: 1;
 	visibility: visible;
-}
+} */
 
-.portfolio .single-pf .btn:hover {
+/* .portfolio .single-pf .btn:hover {
 	color: #fff;
-}
+} */
 
 .portfolio .owl-nav {
 	display: none;
@@ -2173,24 +2236,24 @@ body {
 	margin-top: 25px;
 }
 
-.pricing-table .btn {
+/* .pricing-table .btn {
 	padding: 12px 25px;
 	width: 100%;
 	color: #fff;
-}
+} */
 
-.pricing-table .btn:before {
+/* .pricing-table .btn:before {
 	background: #2C2D3F;
-}
+} */
 
-.pricing-table .btn:hover {
+/* .pricing-table .btn:hover {
 	color: #fff;
-}
+} */
 
-.pricing-table .btn i {
+/* .pricing-table .btn i {
 	font-size: 16px;
 	margin-right: 10px;
-}
+} */
 
 /*=============================
 	End Pricing Table CSS
@@ -2518,8 +2581,13 @@ body {
 /*=======================
 	Start Blog CSS
 =========================*/
+
 .blog .blog-title {
 	text-align: center;
+}
+
+.section-title {
+	margin-top: 0;
 }
 
 .blog .section-title h2 {
@@ -2541,7 +2609,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 2rem auto;
+	margin: 2rem auto 1rem auto;
 }
 
 .blog .single-news {
@@ -2597,25 +2665,22 @@ body {
 	width:100%;
 } */
 .blog .single-news .news-body h2 {
-	font-size: 18px;
-	font-weight: 600;
 	margin-bottom: 10px;
 	line-height: 24px;
 }
 
-.blog .single-news .news-body p a {
+.learn-more {
 	color: #2C2D3F;
 	font-weight: 500;
 }
 
-.blog .single-news .news-body p a:hover {
+.learn-more:hover {
 	color: #D87F93;
 }
 
 .blog .single-news .news-content p {
 	font-weight: 400;
 	text-transform: capitalize;
-	font-size: 13px;
 	letter-spacing: 0px;
 	line-height: 23px;
 	margin-top: 1rem;
@@ -2636,7 +2701,9 @@ body {
 .blog.grid .single-news {
 	margin-top: 30px;
 }
-
+.arrow {
+	padding-left: 0.2rem;
+}
 /* Blog Sidebar */
 .main-sidebar {
 	background: #fff;
@@ -3364,17 +3431,17 @@ body {
 	text-align: left;
 }
 
-.news-single .form-group.button .btn {
+/* .news-single .form-group.button .btn {
 	background: #fff;
 	background: #D87F93;
 	color: #fff;
-}
+} */
 
-.news-single .form-group.button .btn:hover {
+/* .news-single .form-group.button .btn:hover {
 	color: #fff;
-}
+} */
 
-.news-single .form-group.button .btn i {
+/* .news-single .form-group.button .btn i {
 	color: #fff;
 	position: relative;
 	top: 0;
@@ -3383,7 +3450,7 @@ body {
 	-webkit-transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
-}
+} */
 
 /*===================
 	End Blog CSS
@@ -3498,19 +3565,19 @@ body {
 	background: #D87F93;
 }
 
-.appointment .appointment-image {}
+/* .appointment .appointment-image {}
 
 .appointment.single-page .button .btn {
 	width: 100%;
-}
+} */
 
-.appointment .button .btn {
+/* .appointment .button .btn {
 	font-weight: 500;
-}
+} */
 
-.appointment .button .btn:hover {
+/* .appointment .button .btn:hover {
 	color: #fff;
-}
+} */
 
 .appointment .form p {
 	margin-top: 10px;
@@ -3643,26 +3710,26 @@ body {
 	border-radius: 4px;
 }
 
-.login .form .form-group.login-btn {
+/* .login .form .form-group.login-btn {
 	margin: 0;
-}
+} */
 
 .login .form button {
 	border: none;
 }
 
-.login .form .btn {
+/* .login .form .btn {
 	display: inline-block;
 	margin-right: 10px;
 	color: #fff;
 	line-height: 20px;
 	width: 100%;
-}
+} */
 
-.login .form .btn:hover {
+/* .login .form .btn:hover {
 	background: #D87F93;
 	color: #fff;
-}
+} */
 
 .login .login-form .checkbox {
 	text-align: left;
@@ -3822,26 +3889,26 @@ body {
 	border-radius: 4px;
 }
 
-.register .form .form-group.login-btn {
+/* .register .form .form-group.login-btn {
 	margin: 0;
-}
+} */
 
 .register .form button {
 	border: none;
 }
 
-.register .form .btn {
+/* .register .form .btn {
 	display: inline-block;
 	margin-right: 10px;
 	color: #fff;
 	line-height: 20px;
 	width: 100%;
-}
+} */
 
-.register .form .btn:hover {
+/* .register .form .btn:hover {
 	background: #D87F93;
 	color: #fff;
-}
+} */
 
 .register .register-form .checkbox {
 	text-align: left;
@@ -4093,26 +4160,26 @@ body {
 	border-radius: 4px;
 }
 
-.contact-us .form .form-group.login-btn {
+/* .contact-us .form .form-group.login-btn {
 	margin: 0;
-}
+} */
 
 .contact-us .form button {
 	border: none;
 }
 
-.contact-us .form .btn {
+/* .contact-us .form .btn {
 	display: inline-block;
 	margin-right: 10px;
 	color: #fff;
 	line-height: 20px;
 	width: 100%;
-}
+} */
 
-.contact-us .form .btn:hover {
+/* .contact-us .form .btn:hover {
 	background: #D87F93;
 	color: #fff;
-}
+} */
 
 .contact-us .contact-us-form .checkbox {
 	text-align: left;
@@ -4306,7 +4373,7 @@ body {
 	padding-left: 35px;
 }
 
-.error-page .search-form .btn {
+/* .error-page .search-form .btn {
 	width: 80px;
 	height: 50px;
 	border-radius: 5px;
@@ -4315,11 +4382,11 @@ body {
 	display: inline-block;
 	position: relative;
 	top: -2px;
-}
+} */
 
-.error-page .search-form .btn i {
+/* .error-page .search-form .btn i {
 	font-size: 16px;
-}
+} */
 
 /*========================
 	End Error 404 CSS
@@ -4358,9 +4425,9 @@ body {
 	padding: 20px 15px;
 }
 
-.mail-seccess .success-inner .btn {
+/* .mail-seccess .success-inner .btn {
 	color: #fff;
-}
+} */
 
 /*===========================
 	End Mail Success CSS
@@ -4402,7 +4469,7 @@ body {
 	font-weight: 400;
 }
 
-.newsletter .btn {
+/* .newsletter .btn {
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
@@ -4418,11 +4485,11 @@ body {
 	font-size: 13px;
 	font-weight: 500;
 	box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
-}
+} */
 
-.newsletter .btn:before {
+/* .newsletter .btn:before {
 	border-radius: 5px;
-}
+} */
 
 .newsletter .button:hover {
 	box-shadow: none;
@@ -4547,8 +4614,26 @@ body {
 	Start About Us CSS
 ===========================*/
 
+.services-title {
+	margin-top: 5rem;
+	margin-bottom: 0;
+}
+
 .outstanding-services {
 	padding: 4rem;
+}
+
+@media (max-width: 576px) {
+	.flag-services-img {
+		display: none;
+	}
+}
+
+.left-services .services-container .services-icon {
+	order: -1;
+}
+.right-services .services-container .services-icon {
+	order: -1;
 }
 
 .left-services,
@@ -4719,9 +4804,9 @@ body {
 	margin-bottom: 0;
 }
 
-.about-content .btn {
+/* .about-content .btn {
 	margin-top: 30px;
-}
+} */
 
 /* Start Our Vision Area CSS */
 .our-vision-area {
@@ -5202,11 +5287,6 @@ section {
 	padding: 0 !important;
 }
 
-.section-title {
-	margin-bottom: 0rem !important;
-	margin-top: 5rem !important;
-}
-
 /*=========================
 	Languaje selector CSS
 ===========================*/
@@ -5266,13 +5346,14 @@ section {
 
 .collapsing .language-picker-container {
 	position: relative;
-	top: -2.75rem;
+	top: -4.5rem;
 	opacity: 0;
 }
 
 @media (max-width: 768px) {
 	.language-picker-container {
 		padding: 1rem;
+		padding-bottom: 0;
 	}
 	.navbar-nav {
 		padding-top: 1rem;
@@ -5287,4 +5368,37 @@ section {
 .navbar-collapse {
 	transition-duration: 0.75s;
 	/* Adjust the transition time as needed */
+}
+
+/* General modifications */
+
+.btn-custom {
+	background-color: #7790B8 !important;
+	font-weight: 600;
+	border-radius: 1rem;
+	padding: 0.75rem 1rem;
+}
+
+.btn-custom {
+	border-radius: 5px;
+	box-shadow: 0px 5px 0px #4f607a;
+	position: relative;
+	top: 0px;
+	transition: all ease 0.15s;
+  }
+
+  .btn-custom:hover {
+	box-shadow: 0 3px 0 #4f607a;
+	top: 3px;
+  }
+
+/* General Media Queries */
+
+@media (max-width: 576px) {
+	h3 {
+		font-size: 1.15rem;
+	}
+	p, span, a {
+		font-size: 0.75rem;
+	}
 }
