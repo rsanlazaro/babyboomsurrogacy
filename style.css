@@ -5605,7 +5605,7 @@ section {
 @media (max-width: 768px) {
 	.language-picker-container {
 		padding: 1rem;
-		padding-bottom: 0;
+		/* padding-bottom: 0; */
 	}
 
 	.navbar-nav {
@@ -5657,4 +5657,12 @@ section {
 	a {
 		font-size: 0.75rem;
 	}
+}
+
+/* Articles */
+
+.section-article {
+	justify-content: center;
+	width: 100%;
+	margin: 5rem auto 15rem auto; 
 }
