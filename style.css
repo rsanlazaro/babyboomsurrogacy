@@ -574,6 +574,43 @@ h3 {
 	border-color: transparent;
 }
 
+.nav-link:hover {
+	color: #D87F93 !important;
+}
+
+.dropdown-item:hover {
+	color: #D87F93 !important;
+	background-color: transparent !important;
+}
+
+.dropdown-toggle {
+	text-align: center;
+}
+
+.dropdown-item {
+	text-align: center;
+}
+
+.dropdown-menu {
+	padding: 0 !important;
+	border: none;
+	border-radius: 0;
+}
+
+@media (min-width: 768px) {
+	.dropdown-item:hover {
+		background-color: rgba(216, 127, 146, 0.781) !important;
+		color: white !important;
+	}
+	.dropdown-menu {
+		border-left: 0.25rem rgba(216, 127, 146, 0.781) solid;
+		top: 3.2rem !important;
+	}
+	.dropdown-item {
+		text-align: start;
+	}
+}
+
 /* Right Bar */
 .header.style2 .main-menu {
 	display: inline-block;
@@ -4203,7 +4240,13 @@ h3 {
    Start Contact Us CSS
 ===========================*/
 .contact-us {
-	margin: 5rem auto;
+	margin: 2rem 1rem 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+	.contact-us {
+		margin: 5rem auto 10rem auto;
+	}
 }
 
 .contact-us .inner {
@@ -4219,6 +4262,12 @@ h3 {
 
 .contact-us .contact-us-form {
 	padding: 50px 40px;
+}
+
+@media (min-width: 992px) {
+	.contact-us .contact-us-form {
+		padding-left: 0;
+	}
 }
 
 .contact-us .contact-us-form h2 {
@@ -4289,6 +4338,7 @@ h3 {
 
 .contact-us .form button {
 	border: none;
+	color: white;
 }
 
 /* .contact-us .form .btn {
@@ -5548,11 +5598,34 @@ section {
 }
 
 .display-none {
-	display: none;
+	display: none !important;
 }
 
 #map {
 	/* height: 180px; */
+	border-radius: 50rem;
+}
+
+.leaflet-control {
+	margin-left: 1rem !important;
+	margin-top: 7rem !important;
+}
+
+.leaflet-control-attribution {
+	display: none;
+}
+
+.leaflet-control-attribution-custom {
+	background-color: rgba(255,255,255,0.5) !important;
+	box-shadow: none !important;
+	padding: 0 5px !important;
+    color: #333 !important;
+    line-height: 1.4 !important;
+	left: 0 !important;
+	width: 100% !important;
+	text-align: center;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 /*=========================
@@ -5560,8 +5633,8 @@ section {
 ===========================*/
 
 .location {
-	width: 50%;
-	height: 50%;
+	width: 18rem;
+	height: 18rem;
 }
 
 .map {
@@ -5570,9 +5643,15 @@ section {
 }
 
 .contact-us-left {
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
+}
+
+@media (min-width: 992px) {
+	.contact-us-left {
+		display: flex;		
+	}
 }
 
 /*=========================
@@ -5630,6 +5709,8 @@ section {
 	font-weight: 600;
 	border-radius: 1rem;
 	padding: 0.75rem 1rem;
+	width: fit-content;
+	margin: auto;
 }
 
 .btn-custom {
@@ -5665,4 +5746,17 @@ section {
 	justify-content: center;
 	width: 100%;
 	margin: 5rem auto 15rem auto; 
+}
+
+/* Scrollup */
+
+#scrollUp span {
+	font-size: 1.8rem ;
+	color: white ;
+}
+
+/* Social share */
+
+.social-share span {
+	color: white;
 }

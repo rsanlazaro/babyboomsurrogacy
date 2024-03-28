@@ -163,9 +163,12 @@
 						<a class="dropdown-item" href="multilingue.html">Equipe Multilingue</a>
 					</div>
 				</li>
-				<li class="nav-item active spanish display-block"><a class="nav-link" href="contact.html">Contáctanos</a></li>
-				<li class="nav-item active english display-none"><a class="nav-link" href="contact.html">Contact us</a></li>
-				<li class="nav-item active french display-none"><a class="nav-link" href="contact.html">Contactez-nous</a></li>
+				<li class="nav-item active spanish display-block"><a class="nav-link"
+						href="contact.html">Contáctanos</a></li>
+				<li class="nav-item active english display-none"><a class="nav-link" href="contact.html">Contact us</a>
+				</li>
+				<li class="nav-item active french display-none"><a class="nav-link"
+						href="contact.html">Contactez-nous</a></li>
 			</ul>
 			<div class="col-md-2 col-12 language-picker-container">
 				<div class="language-picker js-language-picker get-quote"
@@ -189,7 +192,9 @@
 			<div class="bread-inner">
 				<div class="row">
 					<div class="col-12">
-						<h2>Contáctanos</h2>
+						<h2 class="spanish display-block">Contáctanos</h2>
+						<h2 class="french display-none">Nous contacter</h2>
+						<h2 class="english display-none">Get in touch with us</h2>
 					</div>
 				</div>
 			</div>
@@ -207,45 +212,128 @@
 							<!--Start Google-map-->
 							<div class="location">
 								<div class="map" id="map"></div>
+								<div class="leaflet-control-attribution-custom leaflet-control" style="
+    position: absolute;
+    bottom: 15%;
+"><a href="https://leafletjs.com" title="A JavaScript library for interactive maps"><svg aria-hidden="true"
+											xmlns="http://www.w3.org/2000/svg" width="12" height="8">
+											<path fill="#4C7BE1" d="M0 0h12v4H0z"></path>
+											<path fill="#FFD500" d="M0 4h12v3H0z"></path>
+											<path fill="#E0BC00" d="M0 7h12v1H0z"></path>
+										</svg> Leaflet</a> <span aria-hidden="true">|</span> © <a
+										href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>
+								</div>
 							</div>
 							<!--End Google-map-->
 						</div>
 					</div>
 					<div class="col-lg-6">
 						<div class="contact-us-form">
-							<h2>Contáctanos</h2>
-							<p>Si tienes alguna duda, por favor, comunícate con nosotros.</p>
+							<h2 class="spanish display-block">Contáctanos</h2>
+							<h2 class="french display-none">Nous contacter</h2>
+							<h2 class="english display-none">Get in touch with us</h2>
+							<p class="spanish display-block">Si tienes alguna duda, por favor, comunícate con nosotros.</p>
+							<p class="french display-none">Si tu as des questions, contactez-nous, s'il vous plait.</p>
+							<p class="english display-none">If you have any question, please get in touch with us.</p>
 							<!-- Form -->
-							<form class="form" method="post" action="mail/mail.php">
+							<form class="form needs-validation spanish display-block" method="post" action="https://formsubmit.co/rsanlazaro@hotmail.com">
 								<div class="row">
 									<div class="col-lg-6">
 										<div class="form-group">
-											<input type="text" name="name" placeholder="Nombre" required="">
+											<input id="validationCustom01" class="form-control" type="text" name="name" placeholder="Nombre" required="">
 										</div>
 									</div>
 									<div class="col-lg-6">
 										<div class="form-group">
-											<input type="email" name="email" placeholder="Correo" required="">
+											<input id="validationCustom01" class="form-control" type="email" name="email" placeholder="Correo" required="">
 										</div>
 									</div>
 									<div class="col-lg-6">
 										<div class="form-group">
-											<input type="text" name="phone" placeholder="Teléfono" required="">
+											<input id="validationCustom01" class="form-control" type="number" name="phone" placeholder="Teléfono" required="">
 										</div>
 									</div>
 									<div class="col-lg-6">
 										<div class="form-group">
-											<input type="text" name="subject" placeholder="Asunto" required="">
+											<input id="validationCustom01" class="form-control" type="text" name="subject" placeholder="Asunto" required="">
 										</div>
 									</div>
 									<div class="col-lg-12">
 										<div class="form-group">
-											<textarea name="message" placeholder="Mensaje" required=""></textarea>
+											<textarea id="validationCustom01" class="form-control" name="message" placeholder="Mensaje" required=""></textarea>
 										</div>
 									</div>
 									<div class="col-12">
 										<div class="form-group login-btn-custom">
 											<button class="btn-custom" type="submit">Enviar</button>
+										</div>
+									</div>
+								</div>
+							</form>
+							<form class="form needs-validation french display-none" method="post" action="https://formsubmit.co/rsanlazaro@hotmail.com">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input id="validationCustom01" class="form-control" type="text" name="name" placeholder="Nom" required="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input id="validationCustom01" class="form-control" type="email" name="email" placeholder="Courrier" required="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input id="validationCustom01" class="form-control" type="number" name="phone" placeholder="Telephone" required="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input id="validationCustom01" class="form-control" type="text" name="subject" placeholder="Objet" required="">
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="form-group">
+											<textarea id="validationCustom01" class="form-control" name="message" placeholder="Message" required=""></textarea>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group login-btn-custom">
+											<button class="btn-custom" type="submit">Envoyer</button>
+										</div>
+									</div>
+								</div>
+							</form>
+							<form class="form needs-validation english display-none" method="post" action="https://formsubmit.co/rsanlazaro@hotmail.com">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input id="validationCustom01" class="form-control" type="text" name="name" placeholder="Name" required="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input id="validationCustom01" class="form-control" type="email" name="email" placeholder="Email" required="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input id="validationCustom01" class="form-control" type="number" name="phone" placeholder="Phone" required="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input id="validationCustom01" class="form-control" type="text" name="subject" placeholder="Issue" required="">
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="form-group">
+											<textarea id="validationCustom01" class="form-control" name="message" placeholder="Message" required=""></textarea>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group login-btn-custom">
+											<button class="btn-custom" type="submit">Send</button>
 										</div>
 									</div>
 								</div>
@@ -283,30 +371,56 @@
 					<div class="col-lg-4 col-md-6 col-12">
 						<div class="single-footer">
 							<img src="img/footer1.png" alt="us">
-							<h2>Nosotros</h2>
-							<p>1111, 6th Avenue Suite 300, CA</p>
-							<p>92101 SAN DIEGO - USA</p>
-							<p>Teléfono EU: +1 786588-0586</p>
+							<h2 class="spanish display-block">Nosotros</h2>
+							<h2 class="french display-none">Nous</h2>
+							<h2 class="english display-none">Us</h2>
+							<p class="spanish display-block">1111, 6th Avenue Suite 300, CA</p>
+							<p class="french display-none">1111, 6th Avenue Suite 300, CA</p>
+							<p class="english display-none">1111, 6th Avenue Suite 300, CA</p>
+							<p class="spanish display-block">92101 SAN DIEGO - USA</p>
+							<p class="french display-none">92101 SAN DIEGO - USA</p>
+							<p class="english display-none">92101 SAN DIEGO - USA</p>
+							<p class="spanish display-block">Teléfono EU: +1 786588-0586</p>
+							<p class="french display-none">Telephone EU: +1 786588-0586</p>
+							<p class="english display-none">Phone EU: +1 786588-0586</p>
 							<p>info@babyboomsurrogacy.com</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6 col-12">
 						<div class="single-footer f-link">
 							<img src="img/footer2.png" alt="schedule">
-							<h2>Horarios</h2>
-							<p>Ciudad de México CDMX (GMT-6)</p>
-							<p>Lunes a Viernes</p>
-							<p>10am - 6pm</p>
-							<p>Whatsapp 24h para urgencias</p>
+							<h2 class="spanish display-block">Horarios</h2>
+							<h2 class="french display-none">Horaires</h2>
+							<h2 class="english display-none">Schedule</h2>
+							<p class="spanish display-block">Ciudad de México CDMX (GMT-6)</p>
+							<p class="french display-none">Ciudad de México CDMX (GMT-6)</p>
+							<p class="english display-none">Ciudad de México CDMX (GMT-6)</p>
+							<p class="spanish display-block">Lunes a Viernes</p>
+							<p class="french display-none">Lundi a Vendredi</p>
+							<p class="english display-none">Monday to Friday</p>
+							<p class="spanish display-block">10am - 6pm</p>
+							<p class="french display-none">10am - 6pm</p>
+							<p class="english display-none">10am - 6pm</p>
+							<p class="spanish display-block">Whatsapp 24h para urgencias</p>
+							<p class="french display-none">Whatsapp 24h pour Urgences</p>
+							<p class="english display-none">Whatsapp 24h for emergencies</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6 col-12">
 						<div class="single-footer">
 							<img src="img/footer3.png" alt="contact">
-							<h2>Contacto</h2>
-							<p>Oficina México Condesa, Cuauhtémoc</p>
-							<p>Teléfono: +52 55 11744125</p>
-							<p>Whatsapp: +34 608427798</p>
+							<h2 class="spanish display-block">Contacto</h2>
+							<h2 class="french display-none">Contact</h2>
+							<h2 class="english display-none">Contact</h2>
+							<p class="spanish display-block">Oficina México Condesa, Cuauhtémoc</p>
+							<p class="french display-none">Bureau México Condesa, Cuauhtémoc</p>
+							<p class="english display-none">Office México Condesa, Cuauhtémoc</p>
+							<p class="spanish display-block">Teléfono: +52 55 11744125</p>
+							<p class="french display-none">Telephone: +52 55 11744125</p>
+							<p class="english display-none">Phone: +52 55 11744125</p>
+							<p class="spanish display-block">Whatsapp: +34 608427798</p>
+							<p class="french display-none">Whatsapp: +34 608427798</p>
+							<p class="english display-none">Whatsapp: +34 608427798</p>
 						</div>
 					</div>
 					<div class="single-footer text-center social-container">
@@ -330,7 +444,9 @@
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-12">
 						<div class="copyright-content">
-							<p>© Copyright 2024 | Todos los derechos reservados</a> </p>
+							<p class="spanish display-block">© Copyright 2024 | Todos los derechos reservados</a> </p>
+							<p class="french display-none">© Copyright 2024 | Tous droits reservés</a> </p>
+							<p class="english display-none">© Copyright 2024 | All rights reserved</a> </p>
 						</div>
 					</div>
 				</div>

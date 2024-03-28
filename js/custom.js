@@ -113,7 +113,7 @@ function val() {
 }
 
 function displayMap() {
-    var map = L.map("map").setView([19.447683, -99.063565], 14);
+    var map = L.map("map").setView([19.38982, -99.16580], 20);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution:
@@ -121,5 +121,5 @@ function displayMap() {
         detectRetina: true,
     }).addTo(map);
 
-    L.marker([19.447683, -99.063565]).addTo(map);
+    L.marker([19.38982, -99.16580]).addTo(map);
 }
