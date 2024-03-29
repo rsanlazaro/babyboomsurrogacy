@@ -602,10 +602,12 @@ h3 {
 		background-color: rgba(216, 127, 146, 0.781) !important;
 		color: white !important;
 	}
+
 	.dropdown-menu {
 		border-left: 0.25rem rgba(216, 127, 146, 0.781) solid;
 		top: 3.2rem !important;
 	}
+
 	.dropdown-item {
 		text-align: start;
 	}
@@ -1292,6 +1294,7 @@ h3 {
 		padding-bottom: 2rem !important;
 		font-size: 1.1rem !important;
 	}
+
 	.Feautes .single-features .number-features {
 		top: 0;
 	}
@@ -1302,6 +1305,7 @@ h3 {
 	.Feautes .single-features h3 {
 		padding-top: 0 !important;
 	}
+
 	.Feautes .single-features .number-features {
 		top: -2rem;
 	}
@@ -1483,14 +1487,17 @@ h3 {
 		flex-direction: row;
 		margin-bottom: 10rem;
 	}
+
 	.contact-text {
 		text-align: start;
 	}
+
 	.contact-text p {
 		width: 80%;
 		font-size: 1.1rem;
 		text-align: left;
 	}
+
 	.contact-button {
 		display: flex;
 	}
@@ -5616,11 +5623,11 @@ section {
 }
 
 .leaflet-control-attribution-custom {
-	background-color: rgba(255,255,255,0.5) !important;
+	background-color: rgba(255, 255, 255, 0.5) !important;
 	box-shadow: none !important;
 	padding: 0 5px !important;
-    color: #333 !important;
-    line-height: 1.4 !important;
+	color: #333 !important;
+	line-height: 1.4 !important;
 	left: 0 !important;
 	width: 100% !important;
 	text-align: center;
@@ -5650,7 +5657,7 @@ section {
 
 @media (min-width: 992px) {
 	.contact-us-left {
-		display: flex;		
+		display: flex;
 	}
 }
 
@@ -5745,18 +5752,67 @@ section {
 .section-article {
 	justify-content: center;
 	width: 100%;
-	margin: 5rem auto 15rem auto; 
+	margin: 5rem auto 15rem auto;
+}
+
+.section-ul li {
+	list-style-type: disc;
+	margin-left: 1rem;
+	padding-left: 0.5rem;
+}
+
+.section-ul {
+	margin-bottom: 1rem;
 }
 
 /* Scrollup */
 
 #scrollUp span {
-	font-size: 1.8rem ;
-	color: white ;
+	font-size: 1.8rem;
+	color: white;
+}
+
+.section-article h3 {
+	color: #262f71;
+	margin: 2rem auto;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.section-article h4 {
+	color: #262f71;
+	margin: 1rem auto;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+@media (min-width: 576px) {
+	.section-article h3 {
+		font-size: 1.5rem;
+	}
+	.section-article h4 {
+		font-size: 1.25rem;
+	}
+}
+
+/* section nav buttons */
+
+.disabled {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+}
+
+.disabled a {
+	color: rgb(211, 211, 211) !important;
+	border-color: rgb(211, 211, 211) !important;
 }
 
 /* Social share */
 
 .social-share span {
 	color: white;
+}
+
+.blog-bottom {
+	margin-top: 2rem;
 }
