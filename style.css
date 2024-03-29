@@ -1519,6 +1519,13 @@ h3 {
 	padding: 2rem 1rem !important;
 	/* margin-top: 5rem; */
 	margin-bottom: 3rem;
+	text-align: center;
+}
+
+@media (min-width: 576px) {
+	.why-choose {
+		text-align: start;
+	}	
 }
 
 .choose-right {
@@ -1558,8 +1565,17 @@ h3 {
 	left: 0;
 	bottom: 0;
 	height: 2px;
-	width: 50px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
 	background: white;
+}
+
+@media (min-width: 576px) { 
+	.why-choose .choose-left h3:before {
+		width: 12rem;
+		margin-left: 0;
+	}
 }
 
 .why-choose .choose-left h4 {
@@ -4849,7 +4865,13 @@ h3 {
 }
 
 .left-services .services-container .services-text {
-	align-items: end;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.left-services .services-container .services-text {
+		align-items: end;
+	}	
 }
 
 .right-services .services-container .services-text {
@@ -4890,6 +4912,7 @@ h3 {
 .services-icon {
 	display: flex;
 	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 /*  */
