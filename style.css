@@ -737,7 +737,7 @@ h3 {
 }
 
 .slider .single-slider {
-	height: 600px;
+	height: 500px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -809,7 +809,7 @@ h3 {
 	width: 50px;
 	line-height: 50px;
 	text-align: center;
-	background: #D87F93;
+	background: rgba(216, 127, 146, 0.5);
 	color: #fff;
 	font-size: 26px;
 	position: absolute;
@@ -3262,6 +3262,8 @@ h3 {
 /* Social Share */
 .news-single .social-share {
 	float: left;
+	opacity: 0;
+	display: none;
 }
 
 .news-single .social-share li {
