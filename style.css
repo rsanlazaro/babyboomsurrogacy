@@ -18,6 +18,16 @@ li {
 	font-size: 0.75rem;
 }
 
+@media (min-width: 576px) {
+	p,
+	span,
+	a,
+	option,
+	li {
+		font-size: 1rem;
+	}
+}
+
 h2 {
 	font-size: 1rem;
 }
@@ -32,12 +42,12 @@ h3 {
 	span,
 	option,
 	li {
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 	}
 
 	.navbar-nav a,
 	.navbar-nav li {
-		font-size: 0.85rem;
+		font-size: 0.95rem;
 	}
 
 	h2 {
@@ -46,6 +56,33 @@ h3 {
 
 	h3 {
 		font-size: 1rem;
+	}
+}
+
+@media (min-width: 992px) {
+
+	p,
+	span,
+	option,
+	li {
+		font-size: 0.9rem;
+	}
+
+	.navbar-nav a,
+	.navbar-nav li {
+		font-size: 1.05rem;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	h3 {
+		font-size: 1.15rem;
+	}
+
+	h4 {
+		font-size: 1.2rem !important;
 	}
 }
 
@@ -1525,7 +1562,7 @@ h3 {
 @media (min-width: 576px) {
 	.why-choose {
 		text-align: start;
-	}	
+	}
 }
 
 .choose-right {
@@ -1571,7 +1608,7 @@ h3 {
 	background: white;
 }
 
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
 	.why-choose .choose-left h3:before {
 		width: 12rem;
 		margin-left: 0;
@@ -4873,7 +4910,7 @@ h3 {
 @media (min-width: 768px) {
 	.left-services .services-container .services-text {
 		align-items: end;
-	}	
+	}
 }
 
 .right-services .services-container .services-text {
@@ -5769,7 +5806,7 @@ section {
 	p,
 	span,
 	a {
-		font-size: 0.75rem;
+		font-size: 0.9rem;
 	}
 }
 
@@ -5804,6 +5841,7 @@ section {
 	font-size: 1rem;
 	font-weight: bold;
 }
+
 .section-article h4 {
 	color: #262f71;
 	margin: 1rem auto;
@@ -5815,6 +5853,7 @@ section {
 	.section-article h3 {
 		font-size: 1.5rem;
 	}
+
 	.section-article h4 {
 		font-size: 1.25rem;
 	}
