@@ -21,6 +21,10 @@
 		href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
 		rel="stylesheet">
 
+	<!-- Bootstrap -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Nice Select CSS -->
@@ -232,115 +236,227 @@
 							<h2 class="spanish display-block">Contáctanos</h2>
 							<h2 class="french display-none">Nous contacter</h2>
 							<h2 class="english display-none">Get in touch with us</h2>
-							<p class="spanish display-block">Si tienes alguna duda, por favor, comunícate con nosotros.</p>
+							<p class="spanish display-block">Si tienes alguna duda, por favor, comunícate con nosotros.
+							</p>
 							<p class="french display-none">Si tu as des questions, contactez-nous, s'il vous plait.</p>
 							<p class="english display-none">If you have any question, please get in touch with us.</p>
-							<!-- Form -->
-							<form class="form needs-validation spanish display-block" method="post" action="https://formsubmit.co/desarrollo_web_rsl@hotmail.com">
-								<input type="hidden" name="_cc" value="info@babyboomsurrogacy.com">
+							<!-- START NEW FORM -->
+							<form action="https://formsubmit.co/desarrollo_web_rsl@hotmail.com" method="POST"
+								class="form needs-validation" novalidate>
 								<div class="row">
 									<div class="col-lg-6">
 										<div class="form-group">
-											<input id="validationCustom01" class="form-control" type="text" name="name" placeholder="Nombre" required="" oninvalid="this.setCustomValidity('Ingrese el nombre')">
+											<label for="Nombre" class="spanish display-block">Nombre</label>
+											<label for="Nombre" class="english display-none">Name</label>
+											<label for="Nombre" class="french display-none">Nom</label>
+											<input type="text" class="form-control" id="Nombre"
+												name="Nombre" required />
+											<div class="invalid-feedback">
+												<div class="spanish display-block">Ingrese un nombre</div>
+												<div class="english display-none">Write a valid name</div>
+												<div class="french display-none">Écrivez un nom</div>
+											</div>
 										</div>
 									</div>
 									<div class="col-lg-6">
 										<div class="form-group">
-											<input id="validationCustom01" class="form-control" type="email" name="email" placeholder="Correo" required="" oninvalid="this.setCustomValidity('Ingrese el email con formato adecuado')">
+											<label for="Correo" class="spanish display-block">Correo</label>
+											<label for="Correo" class="english display-none">Mail</label>
+											<label for="Correo" class="french display-none">Courrier</label>
+											<input type="email" class="form-control" id="validationCustomUsername"
+												name="Correo" required />
+											<div class="invalid-feedback">
+												<div class="spanish display-block">Ingrese un correo válido</div>
+												<div class="english display-none">Write a valid e-mail</div>
+												<div class="french display-none">Écrivez un courrier</div>
+											</div>
 										</div>
 									</div>
 									<div class="col-lg-6">
 										<div class="form-group">
-											<input id="validationCustom01" class="form-control" type="number" name="phone" placeholder="Teléfono" required="" oninvalid="this.setCustomValidity('Ingrese el teléfono')">
+											<label for="Telefono" class="spanish display-block">Teléfono</label>
+											<label for="Telefono" class="english display-none">Phone</label>
+											<label for="Telefono" class="french display-none">Téléphone</label>
+											<input type="number" class="form-control" id="validationCustomUsername"
+												name="Telefono" required />
+											<div class="invalid-feedback">
+												<div class="spanish display-block">Ingrese un teléfono válido</div>
+												<div class="english display-none">Write a valid phone</div>
+												<div class="french display-none">Écrivez un téléphone</div>
+											</div>
 										</div>
 									</div>
 									<div class="col-lg-6">
 										<div class="form-group">
-											<input id="validationCustom01" class="form-control" type="text" name="subject" placeholder="Asunto" required="" oninvalid="this.setCustomValidity('Ingrese el asunto')">
+											<label for="Asunto" class="spanish display-block">Asunto</label>
+											<label for="Asunto" class="english display-none">Subject</label>
+											<label for="Asunto" class="french display-none">Sujet</label>
+											<input type="text" class="form-control" id="validationCustomUsername"
+												name="Asunto" required />
+											<div class="invalid-feedback">
+												<div class="spanish display-block">Ingrese un asunto válido</div>
+												<div class="english display-none">Write a valid subject</div>
+												<div class="french display-none">Écrivez un sujet</div>
+											</div>
 										</div>
 									</div>
 									<div class="col-lg-12">
 										<div class="form-group">
-											<textarea id="validationCustom01" class="form-control" name="message" placeholder="Mensaje"></textarea>
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="form-group login-btn-custom">
-											<button class="btn-custom" type="submit">Enviar</button>
+											<label for="Mensaje" class="spanish display-block">Mensaje</label>
+											<label for="Mensaje" class="english display-none">Message</label>
+											<label for="Mensaje" class="french display-none">Message</label>
+											<input type="text" class="form-control" id="validationCustomUsername"
+												name="Mensaje" required />
+											<div class="invalid-feedback">
+												<div class="spanish display-block">Ingrese un mensaje válido</div>
+												<div class="english display-none">Write a valid message</div>
+												<div class="french display-none">Écrivez un message</div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</form>
-							<form class="form needs-validation french display-none" method="post" action="https://formsubmit.co/desarrollo_web_rsl@hotmail.com">
+								<div class="col-12">
+									<div class="form-group login-btn-custom">
+										<button class="btn-custom spanish display-block" type="submit">Enviar</button>
+										<button class="btn-custom english display-none" type="submit">Send</button>
+										<button class="btn-custom french display-none" type="submit">Envoyer</button>
+									</div>
+								</div>
 								<input type="hidden" name="_cc" value="info@babyboomsurrogacy.com">
-								<div class="row">
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input id="validationCustom01" class="form-control" type="text" name="name" placeholder="Nom" required="" oninvalid="this.setCustomValidity('Entrez le nom')">
+								<input type="hidden" name="_subject" value="Solicitud de informes" />
+							</form>
+
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h3 class="modal-title spanish display-block" id="exampleModalLabel">
+												Aviso de privacidad
+											</h3>
+											<h3 class="modal-title spanish display-block" id="exampleModalLabel">
+												Privacy policy
+											</h3>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
 										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input id="validationCustom01" class="form-control" type="email" name="email" placeholder="Courrier" required="" oninvalid="this.setCustomValidity('Entrez le courrier')">
+										<div class="modal-body">
+											<p class="spanish display-block">
+												Salud and Concept, con domicilio para efectos del
+												tratamiento de datos personales que efectúa dentro
+												del territorio de los Estados Unidos Mexicanos, el
+												ubicado en las calles de Concepción Beistegui 720,
+												Col del Valle Centro, Benito Juárez, 03100, en la
+												Ciudad de México, es responsable del tratamiento de
+												sus datos personales, mismos que serán utilizados
+												para la prestación de nuestros servicios de
+												intermediación en gestación subrogada, incluyendo
+												los servicios médico-hospitalarios, hospitalización,
+												cirugía, farmacéuticos, análisis de laboratorio,
+												radiología e imagen, estudios y análisis
+												patológicos, terapia, rehabilitación, dieta,
+												nutrición, trabajo social, atención médica y
+												psicológica, inherentes a dicha actividad
+												profesional, así como para los distintos fines
+												establecidos en nuestro aviso de privacidad
+												integral.
+											</p>
+											<p class="english display-none">
+												Salud and Concept, with address for the purposes of processing of
+												personal data carried out within of the
+												United Mexican States territory, located at Concepción Beistegui 720 st,
+												Col del Valle Centro, Benito
+												Juárez, 03100, in Mexico City, is responsible for the treatment of your
+												personal data, which will be used
+												for the provision of our services intermediation in surrogacy, including
+												medical services, hospitalizacion,
+												surgery, pharmaceuticals, laboratory analysis, radiology and imaging,
+												pathological studies and analysis,
+												therapy, rehabilitation, diet, nutrition, social work, health care and
+												physchological, inherent to said
+												professional activity, as well as for the different purposes set out in
+												our privacy policy.
+											</p>
+											<br />
+											<p class="spanish display-block">
+												Los Datos podrían ser transferidos, dentro y fuera
+												del país, a terceros relacionados o subcontratados
+												para los servicios a nuestro cargo, para los mismos
+												fines previstos en nuestro aviso de privacidad
+												integral.
+											</p>
+											<p class="english display-none">
+												Data may be transferred, in or out of the country, to third parties that
+												are related or hired for the
+												services that we have, and for the same purposes of those provided
+												within our Privacy Policy.
+											</p>
+											<br />
+											<p class="spanish display-block">
+												Si Usted no manifiesta su oposición para que los
+												datos personales sean transferidos, se entenderá que
+												otorga su consentimiento para ello.
+											</p>
+											<p class="english display-none">
+												If you don't express your opposition so that your personal data can be
+												transferred, it would be understood
+												that you agree with that.
+											</p>
+											<br />
+											<p class="spanish display-block">
+												Para revocar su consentimiento, ponemos a su
+												disposición el correo electrónico
+												info@travelmedicalcare.com, indicando en el asunto
+												del mensaje, la leyenda: “Revocación de
+												consentimiento de datos personales”, debiendo
+												proporcionar la información solicitada en nuestro
+												aviso de privacidad integral.
+											</p>
+											<p class="english display-none">
+												To remove your authorization, you can send message to
+												info@travelmedicalcare.com, including the subject of
+												the message with the statement: "Revocación de consentimiento de datos
+												personales", giving the information
+												that is required, as explained within our Privacy Policy.
+											</p>
+											<br />
+											<p class="spanish display-block">
+												Para el ejercicio de sus derechos ARCO ponemos a su
+												disposición el correo electrónico
+												info@travelmedicalcare.com, indicando en el asunto
+												la leyenda: “Solicitud de ejercicio de derechos
+												ARCO”, debiendo proporcionar la información
+												solicitada en nuestro aviso de privacidad integral.
+											</p>
+											<p class="english display-none">
+												To exert your ARCO rights, we provide the mail
+												info@travelmedicalcare.com, to which you should address with
+												the subject "Solicitud de ejercicio de derechos ARCO", by providing the
+												data that is requested as shown in
+												the Privacy Policy.
+											</p>
+											<br />
+											<p class="spanish display-block">
+												<i>Última actualización de este aviso de privacidad:
+													25/04/2024</i>
+											</p>
+											<p class="english display-none">
+												<i>Last updated:
+													25/04/2024</i>
+											</p>
 										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input id="validationCustom01" class="form-control" type="number" name="phone" placeholder="Telephone" required="" oninvalid="this.setCustomValidity('Entrez le telephone')">
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input id="validationCustom01" class="form-control" type="text" name="subject" placeholder="Objet" required="" oninvalid="this.setCustomValidity('Entre l´object')">
-										</div>
-									</div>
-									<div class="col-lg-12">
-										<div class="form-group">
-											<textarea id="validationCustom01" class="form-control" name="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="form-group login-btn-custom">
-											<button class="btn-custom" type="submit">Envoyer</button>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary spanish display-block"
+												data-dismiss="modal">Cerrar</button>
+											<button type="button" class="btn btn-secondary english display-none"
+												data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>
-							</form>
-							<form class="form needs-validation english display-none" method="post" action="https://formsubmit.co/desarrollo_web_rsl@hotmail.com">
-								<input type="hidden" name="_cc" value="info@babyboomsurrogacy.com">
-								<div class="row">
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input id="validationCustom01" class="form-control" type="text" name="name" placeholder="Name" required="" oninvalid="this.setCustomValidity('Enter your name')">
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input id="validationCustom01" class="form-control" type="email" name="email" placeholder="Email" required="" oninvalid="this.setCustomValidity('Enter your email')">
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input id="validationCustom01" class="form-control" type="number" name="phone" placeholder="Phone" required="" oninvalid="this.setCustomValidity('Enter your phone')">
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<input id="validationCustom01" class="form-control" type="text" name="subject" placeholder="Issue" required="" oninvalid="this.setCustomValidity('Enter the subject')">
-										</div>
-									</div>
-									<div class="col-lg-12">
-										<div class="form-group">
-											<textarea id="validationCustom01" class="form-control" name="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="form-group login-btn-custom">
-											<button class="btn-custom" type="submit">Send</button>
-										</div>
-									</div>
-								</div>
-							</form>
+							</div>
+							<!-- END NEW FORM -->
 							<!--/ End Form -->
 						</div>
 					</div>
@@ -417,7 +533,7 @@
 							<h2 class="english display-none">Contact</h2>
 							<p class="spanish display-block">Oficina México Condesa, Cuauhtémoc</p>
 							<p class="french display-none">Bureau México Condesa, Cuauhtémoc</p>
-							<p class="english display-none">Office México Condesa, Cuauhtémoc</p> 
+							<p class="english display-none">Office México Condesa, Cuauhtémoc</p>
 							<p class="spanish display-block">Whatsapp: +34 608427798</p>
 							<p class="french display-none">Whatsapp: +34 608427798</p>
 							<p class="english display-none">Whatsapp: +34 608427798</p>
@@ -500,6 +616,16 @@
 	<!-- <script src="js/map-active.js"></script> -->
 	<!-- Bootstrap JS -->
 	<script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap JS -->
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script> -->
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
 	<!-- Custom JS -->
